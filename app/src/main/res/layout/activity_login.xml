@@ -13,7 +13,7 @@
         android:id="@+id/checkBox"
         android:layout_width="376dp"
         android:layout_height="40dp"
-        android:text="@string/recordar"
+        android:text="@string/activity_Login.cbRecordarContrasenia.Texto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
@@ -26,7 +26,7 @@
         android:layout_width="212dp"
         android:layout_height="45dp"
         android:background="@drawable/redondeo_boton"
-        android:text="@string/entrar"
+        android:text="@string/activity_Login.textoBotonEntrar"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="27dp"
         android:background="@drawable/redondeo_boton2"
-        android:text="@string/registrarse"
+        android:text="@string/activity_Login.textoBotonRegistrarse"
         android:textAllCaps="false"
         android:textColor="#8CC846"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:text="@string/olvidado"
+        android:text="@string/activity_Login.tvOlvidarDatos"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,7 +86,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="4dp"
-        android:text="@string/tambien"
+        android:text="@string/activity_Login.tvTambienPuedes"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,7 @@
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/contraseña"
+            android:hint="@string/activity_Login.edContrasenia.hint"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -150,7 +150,7 @@
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/usuario" />
+            android:hint="@string/activity_Login.edUsuario.hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
