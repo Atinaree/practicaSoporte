@@ -10,5 +10,4 @@
         <string name="activity_Login.edContrasenia.hint">Contraseña</string>
         <string name="activity_Login.toast.noPosibleRegistro">No es posible el registro de sesión</string>
         <string name="activity_Login.toast.camposUsuarioContraseñaVacios">Por favor, introduzca la el usuario y la contraseña</string>
-
     </resources>
