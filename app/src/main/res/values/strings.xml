@@ -18,11 +18,11 @@
     <string name="activity_CentroAyuda.btnTextoNotificacionAveria">Notificar Avería</string>
 
     <!-- Activity Notificacion Averia -->
-    <string name="activity_notificacion_averias.tietMotivoAveriaHint">Descripción Averia</string>
-    <string name="activity_notificacion_averias.btEnviarAveriaText">Enviar Averia</string>
-    <string name="activity_notificacion_averias.tvTitleAveriaText">Averia</string>
+    <string name="activity_notificacion_averias.tietMotivoAveriaHint">Descripción Avería</string>
+    <string name="activity_notificacion_averias.btEnviarAveriaText">Enviar Avería</string>
+    <string name="activity_notificacion_averias.tvTitleAveriaText">Avería</string>
     <string name="activity_notificacion_averias.spinnerItem1">Panel Solar</string>
     <string name="activity_notificacion_averias.spinnerItem2">Instalación Electrica</string>
     <string name="activity_notificacion_averias.spinnerItem3">Otros</string>
-    <string name="activity_notificacion_averias.enviarAveria">Averia Enviada</string>
+    <string name="activity_notificacion_averias.enviarAveria">Avería Enviada</string>
 </resources>
