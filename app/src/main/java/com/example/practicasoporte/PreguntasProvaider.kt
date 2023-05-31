@@ -1,6 +1,6 @@
 package com.example.practicasoporte
 
-class preguntasProvaider {
+class PreguntasProvaider {
 
     companion object {
         val listaPreguntas = listOf<Preguntas>(

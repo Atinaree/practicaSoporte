@@ -17,5 +17,7 @@
     <string name="activity_CentroAyuda.btnTextoAsistente"> Asistente</string>
     <string name="activity_CentroAyuda.btnTextoNotificacionAveria">Notificar Avería</string>
 
+    <string name="preguntasFrecuentes.toolbar.titulo">Preguntas frecuentes</string>
+
 
 </resources>
