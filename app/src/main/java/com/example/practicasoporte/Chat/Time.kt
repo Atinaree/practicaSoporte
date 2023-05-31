@@ -1,4 +1,4 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.Chat
 
 import java.sql.Date
 import java.sql.Timestamp

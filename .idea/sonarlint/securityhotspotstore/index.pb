@@ -72,3 +72,13 @@ w
 G.idea/sonarlint/issuestore/2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3,9\a\9aed88f31eac276604c6355c1adcc0bce1f80fd6
 w
 G.idea/sonarlint/issuestore/2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4,5\1\516e730a14e71f02fa73f3acd6dc7cea9a9fe002
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+h
+8app/src/main/java/com/example/practicasoporte/Message.kt,3\0\3005cfba99f250cf6293e5b33c39453800033310
+j
+:app/src/main/java/com/example/practicasoporte/Constants.kt,9\d\9db09e791fdcc9adbc47d21d254ec9ae41946d88
+q
+Aapp/src/main/java/com/example/practicasoporte/MessagingAdapter.kt,3\f\3ff2832f65cd2a1ee36207e07fc766e1f8996db6
+e
+5app/src/main/java/com/example/practicasoporte/Time.kt,3\0\30c2da2a8db032cf84e2c03bbe72d664607b1be9

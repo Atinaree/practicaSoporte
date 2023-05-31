@@ -1,4 +1,4 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.Chat
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.practicasoporte.Constants.RECIVE_ID
-import com.example.practicasoporte.Constants.SEND_ID
+import com.example.practicasoporte.Chat.Constants.RECIVE_ID
+import com.example.practicasoporte.Chat.Constants.SEND_ID
+import com.example.practicasoporte.R
 
 class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>() {
 

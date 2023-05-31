@@ -1,11 +1,11 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.Chat
 
 import android.widget.Button
 import android.widget.EditText
 import androidx.recyclerview.widget.RecyclerView
-import com.example.practicasoporte.Constants.OPEN_PAGE
-import com.example.practicasoporte.Constants.RECIVE_ID
-import com.example.practicasoporte.Constants.SEND_ID
+import com.example.practicasoporte.Chat.Constants.OPEN_PAGE
+import com.example.practicasoporte.Chat.Constants.RECIVE_ID
+import com.example.practicasoporte.Chat.Constants.SEND_ID
 
 
 
@@ -14,6 +14,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.practicasoporte.R
 import kotlinx.coroutines.*
 
 class ChatActivity : AppCompatActivity() {
@@ -36,18 +37,20 @@ class ChatActivity : AppCompatActivity() {
 
         val random = (0..3).random()
         customBotMessage("Hola! Soy ${botList[random]}, ¿Cómo puedo ayudarte?")
+        customBotMessage("Por favor eliga una de las siguientes opciones: \n 1º \n Eustaquio")
     }
 
     private fun clickEvents() {
         var rv_messages = findViewById<RecyclerView>(R.id.rv_messages)
         var et_message = findViewById<EditText>(R.id.et_message)
         var btn_send = findViewById<Button>(R.id.btn_send)
-        //Send a message
+
+        //Enviar la consulta
         btn_send.setOnClickListener {
             sendMessage()
         }
 
-        //Scroll back to correct position when user clicks on text view
+        //
         et_message.setOnClickListener {
             GlobalScope.launch {
                 delay(100)
@@ -87,7 +90,7 @@ class ChatActivity : AppCompatActivity() {
         val timeStamp = Time.timeStamp()
 
         if (message.isNotEmpty()) {
-            //Adds it to our local list
+            //Añadimos el mensaje a la lista local
             messagesList.add(Message(message, SEND_ID, timeStamp))
             et_message.setText("")
 
@@ -102,21 +105,20 @@ class ChatActivity : AppCompatActivity() {
         val timeStamp = Time.timeStamp()
 
         GlobalScope.launch {
-            //Fake response delay
             delay(1000)
 
             withContext(Dispatchers.Main) {
-                //Gets the response
+                // Cogemos la respuesta
                 val response = BotResponse.basicResponses(message)
 
-                //Adds it to our local list
+                //La añaddimos a la lista local
                 messagesList.add(Message(response, RECIVE_ID, timeStamp))
 
-                //Inserts our message into the adapter
+                //insertamos la respuesta en el adaptador
                 adapter.insertMessage(Message(response, RECIVE_ID, timeStamp))
 
                 var rv_messages = findViewById<RecyclerView>(R.id.rv_messages)
-                //Scrolls us to the position of the latest message
+                //Sube la vista
                 rv_messages.scrollToPosition(adapter.itemCount - 1)
 
                 //inicia la pagina de iberdrola
