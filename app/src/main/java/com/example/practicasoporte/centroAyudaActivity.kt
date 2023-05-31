@@ -12,5 +12,8 @@ class centroAyudaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCentroAyudaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
     }
 }
