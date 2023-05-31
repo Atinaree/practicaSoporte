@@ -20,7 +20,6 @@ class PreguntasViewHolder(view: View): RecyclerView.ViewHolder(view){
                 binding.preguntasFrecuentesTvCuerpoPregunta.visibility = View.GONE
                 binding.preguntasFrecuentesBtnDeplegarCuerpoPregunta.setImageResource(R.drawable.flecha_bajo)
             }
-
         }
     }
 

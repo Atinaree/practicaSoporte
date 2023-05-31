@@ -19,7 +19,10 @@ class PreguntasProvider {
             Preguntas(
                 "¿Necesito contador inteligente?",
                 "Todos los Planes a Tu Medida salvo el Plan Estable y el Plan 3 periodos requieren tener un contador inteligente efectivamente integrado en el sistema, es decir, que seamos capaces de recibir en remoto el consumo horario con el objetivo de facturarle más baratas aquellas horas en las que tiene un precio promocionado."
-            )
+            ),
+            Preguntas(
+                "¿Mis precios son fijos durante 5 años?",
+                "Iberdrola se compromete a mantener tus precios fijos a 5 años sin compromiso de permanencia. Iberdrola únicamente te repercutirá el IPC y se te actualizarán los conceptos regulados al alza o a la baja en caso de haber modificaciones. Recuerda además que los Planes a Tu Medida son completamente flexibles y puedes cambiarte a un nuevo Plan cuando quieras, salvo de un Plan Verano a un Plan Invierno o viceversa. ")
         )
     }
 }
