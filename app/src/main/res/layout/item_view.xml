@@ -22,16 +22,15 @@
 
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/preguntasFrecuentes.tvTituloPregunta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="5dp"
-                android:text="TextView"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintBottom_toTopOf="@+id/preguntasFrecuentes.tvCuerpoPregunta"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.197"
@@ -39,7 +38,7 @@
                 tools:text="¿Como saber la fecha de mi siguiente factura?" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/preguntasFrecuentes.btnDeplegarCuerpoPregunta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -51,12 +50,12 @@
                 app:srcCompat="@drawable/fecha_bajo"/>
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/preguntasFrecuentes.tvCuerpoPregunta"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/preguntasFrecuentes.tvTituloPregunta"
+                app:layout_constraintTop_toBottomOf="@+id/preguntasFrecuentes.tvTituloPregunta"
                 tools:text="Diríjase al apartado de MI Consumo donde deberá introducir los datos y aparecerá su factura" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
