@@ -3,6 +3,7 @@ package com.example.practicasoporte
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.example.practicasoporte.databinding.ActivityNotificacionAveriasBinding
 
 class NotificacionAveriasActivity : AppCompatActivity() {
@@ -21,5 +22,14 @@ class NotificacionAveriasActivity : AppCompatActivity() {
             baseContext.resources.getString(R.string.activity_notificacion_averias_spinnerItem3)))
 
         binding.spTipoAveria.adapter = aaAveria
+
+        binding.btEnviarAveria.setOnClickListener {
+            Toast.makeText(
+                this,
+                baseContext.resources.getString(R.string.activity_notificacion_averias_enviarAveria),
+                Toast.LENGTH_SHORT
+            ).show()
+            finish()
+        }
     }
 }

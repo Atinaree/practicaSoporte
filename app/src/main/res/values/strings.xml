@@ -24,4 +24,5 @@
     <string name="activity_notificacion_averias.spinnerItem1">Panel Solar</string>
     <string name="activity_notificacion_averias.spinnerItem2">Instalación Electrica</string>
     <string name="activity_notificacion_averias.spinnerItem3">Otros</string>
+    <string name="activity_notificacion_averias.enviarAveria">Averia Enviada</string>
 </resources>
