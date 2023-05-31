@@ -17,7 +17,12 @@
     <string name="activity_CentroAyuda.btnTextoAsistente"> Asistente</string>
     <string name="activity_CentroAyuda.btnTextoNotificacionAveria">Notificar Avería</string>
 
-    <string name="preguntasFrecuentes.toolbar.titulo">Preguntas frecuentes</string>
-
-
+    <!-- Activity Notificacion Averia -->
+    <string name="activity_notificacion_averias.tietMotivoAveriaHint">Descripción Avería</string>
+    <string name="activity_notificacion_averias.btEnviarAveriaText">Enviar Avería</string>
+    <string name="activity_notificacion_averias.tvTitleAveriaText">Avería</string>
+    <string name="activity_notificacion_averias.spinnerItem1">Panel Solar</string>
+    <string name="activity_notificacion_averias.spinnerItem2">Instalación Electrica</string>
+    <string name="activity_notificacion_averias.spinnerItem3">Otros</string>
+    <string name="activity_notificacion_averias.enviarAveria">Avería Enviada</string>
 </resources>
