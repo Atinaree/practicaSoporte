@@ -1,13 +1,21 @@
 <resources>
     <string name="app_name">practicaSoporte</string>
-        <!--Recursos para la vista de Login-->
-        <string name="activity_Login.cbRecordarContrasenia.Texto"> Recordar Contraseña</string>
-        <string name="activity_Login.tvOlvidarDatos"><u>He olvidado mis datos</u></string>
-        <string name="activity_Login.textoBotonEntrar">Entrar</string>
-        <string name="activity_Login.tvTambienPuedes">Tambien Puedes</string>
-        <string name="activity_Login.textoBotonRegistrarse">Registrarse</string>
-        <string name="activity_Login.edUsuario.hint">Usuario</string>
-        <string name="activity_Login.edContrasenia.hint">Contraseña</string>
-        <string name="activity_Login.toast.noPosibleRegistro">No es posible el registro de sesión</string>
-        <string name="activity_Login.toast.camposUsuarioContraseñaVacios">Por favor, introduzca la el usuario y la contraseña</string>
-    </resources>
+    <!--Recursos para la vista de Login-->
+    <string name="activity_Login.cbRecordarContrasenia.Texto"> Recordar Contraseña</string>
+    <string name="activity_Login.tvOlvidarDatos"><u>He olvidado mis datos</u></string>
+    <string name="activity_Login.textoBotonEntrar">Entrar</string>
+    <string name="activity_Login.tvTambienPuedes">Tambien Puedes</string>
+    <string name="activity_Login.textoBotonRegistrarse">Registrarse</string>
+    <string name="activity_Login.edUsuario.hint">Usuario</string>
+    <string name="activity_Login.edContrasenia.hint">Contraseña</string>
+    <string name="activity_Login.toast.noPosibleRegistro">No es posible el registro de sesión</string>
+    <string name="activity_Login.toast.camposUsuarioContraseñaVacios">Por favor, introduzca la el usuario y la contraseña</string>
+
+
+    <!--Recursos para la vista de "centro ayuda-->
+    <string name="activity_CentroAyuda.btnTextoPreguntasFrecuentes"> Preguntas frecuentes</string>
+    <string name="activity_CentroAyuda.btnTextoAsistente"> Asistente</string>
+    <string name="activity_CentroAyuda.btnTextoNotificacionAveria">Notificar Avería</string>
+
+
+</resources>
