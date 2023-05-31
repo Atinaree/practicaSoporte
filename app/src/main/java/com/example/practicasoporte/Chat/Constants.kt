@@ -1,4 +1,4 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.Chat
 
 object Constants {
     const val SEND_ID = "SEND_ID"

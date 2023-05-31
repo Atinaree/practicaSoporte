@@ -1,6 +1,6 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.Chat
 
-import com.example.practicasoporte.Constants.OPEN_PAGE
+import com.example.practicasoporte.Chat.Constants.OPEN_PAGE
 import java.sql.Date
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
@@ -15,7 +15,7 @@ object BotResponse {
         return when {
 
             //Hola
-            message.contains("Hola") -> {
+            message.contains("hola") || message.contains("buenas") -> {
                 when (random) {
                     0 -> "Hola!, ¿en que puedo ayudarte?"
                     1 -> "Bienvenido al chat de asistencia,¿Que necesita hoy?"
