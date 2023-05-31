@@ -18,6 +18,6 @@ class PreguntasFrecuentesActivity : AppCompatActivity() {
 
     fun initReciclerView(){
         binding.preguntasFrecuentesRecyclerViewPreguntas.layoutManager = LinearLayoutManager(this)
-        binding.preguntasFrecuentesRecyclerViewPreguntas.adapter = PreguntasAdapter(PreguntasProvaider.listaPreguntas)
+        binding.preguntasFrecuentesRecyclerViewPreguntas.adapter = PreguntasAdapter(PreguntasProvider.listaPreguntas)
     }
 }
