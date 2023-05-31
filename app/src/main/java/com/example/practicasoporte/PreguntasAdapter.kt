@@ -1,0 +1,20 @@
+package com.example.practicasoporte
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+
+class PreguntasAdapter(val listaPreguntas: List<Preguntas>) : RecyclerView.Adapter<PreguntasViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PreguntasViewHolder {
+        val layoutInflater = LayoutInflater.from(parent.context)
+        return PreguntasViewHolder(layoutInflater.inflate(R.layout.item_view, parent, false))
+    }
+
+    override fun getItemCount(): Int =listaPreguntas.size
+
+
+    override fun onBindViewHolder(holder: PreguntasViewHolder, position: Int) {
+        val item = listaPreguntas[position]
+        holder.render(item)
+    }
+}
