@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".centroAyudaActivity">
@@ -11,23 +10,29 @@
       android:id="@+id/centroAyuda.btnNotificarAveria"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginTop="277dp"
       android:text="@string/activity_CentroAyuda.btnTextoNotificacionAveria"
-      tools:layout_editor_absoluteX="132dp"
-      tools:layout_editor_absoluteY="277dp" />
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
   <Button
       android:id="@+id/centroAyuda.btnAsistente"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginEnd="22dp"
+      android:layout_marginBottom="29dp"
       android:text="@string/activity_CentroAyuda.btnTextoAsistente"
-      tools:layout_editor_absoluteX="155dp"
-      tools:layout_editor_absoluteY="200dp" />
+      app:layout_constraintBottom_toTopOf="@+id/centroAyuda.btnNotificarAveria"
+      app:layout_constraintEnd_toEndOf="@+id/centroAyuda.btnNotificarAveria" />
 
   <Button
       android:id="@+id/centroAyuda.btnPreguntasFrecuentes"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginBottom="43dp"
       android:text="@string/activity_CentroAyuda.btnTextoPreguntasFrecuentes"
-      tools:layout_editor_absoluteX="107dp"
-      tools:layout_editor_absoluteY="109dp" />
+      app:layout_constraintBottom_toTopOf="@+id/centroAyuda.btnAsistente"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
