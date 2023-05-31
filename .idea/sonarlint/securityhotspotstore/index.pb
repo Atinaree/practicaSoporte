@@ -72,3 +72,11 @@ w
 G.idea/sonarlint/issuestore/2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3,9\a\9aed88f31eac276604c6355c1adcc0bce1f80fd6
 w
 G.idea/sonarlint/issuestore/2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4,5\1\516e730a14e71f02fa73f3acd6dc7cea9a9fe002
+t
+Dapp/src/main/java/com/example/practicasoporte/centroAyudaActivity.kt,8\2\82f04050a1aa29289515f5feb2f06d0a81305058
+|
+Lapp/src/main/java/com/example/practicasoporte/NotificacionAveriasActivity.kt,a\c\ac7e213e733373f73e8165d1d444e84ae6b9b4a9
+m
+=app/src/main/java/com/example/practicasoporte/MainActivity.kt,1\e\1ea6c76deba76f6d3947a20882dace542929657f
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e

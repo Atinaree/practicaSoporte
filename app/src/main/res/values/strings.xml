@@ -17,5 +17,8 @@
     <string name="activity_CentroAyuda.btnTextoAsistente"> Asistente</string>
     <string name="activity_CentroAyuda.btnTextoNotificacionAveria">Notificar Avería</string>
 
-
+    <!-- Activity Notificacion Averia -->
+    <string name="activity_notificacion_averias.tietMotivoAveriaHint">Descripción Averia</string>
+    <string name="activity_notificacion_averias.btEnviarAveriaText">Enviar Averia</string>
+    <string name="activity_notificacion_averias.tvTitleAveriaText">Averia</string>
 </resources>
