@@ -72,5 +72,19 @@ w
 G.idea/sonarlint/issuestore/2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3,9\a\9aed88f31eac276604c6355c1adcc0bce1f80fd6
 w
 G.idea/sonarlint/issuestore/2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4,5\1\516e730a14e71f02fa73f3acd6dc7cea9a9fe002
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+j
+:app/src/main/java/com/example/practicasoporte/Preguntas.kt,4\6\4689b47378be3cc4df1e331de01336444d88a970
+r
+Bapp/src/main/java/com/example/practicasoporte/Chat/ChatActivity.kt,1\2\12c1d32790a5aeca6aa1eaa836bbdede3ffd40c3
+q
+Aapp/src/main/java/com/example/practicasoporte/Chat/BotResponse.kt,2\e\2e61aa8321cfe72325923ddedf104ee4540b0cae
+q
+Aapp/src/main/java/com/example/practicasoporte/PreguntasAdapter.kt,e\6\e6f4b8a41a89891851eab6b71cf3e347fcb3ae0b
+|
+Lapp/src/main/java/com/example/practicasoporte/NotificacionAveriasActivity.kt,a\c\ac7e213e733373f73e8165d1d444e84ae6b9b4a9
+t
+Dapp/src/main/java/com/example/practicasoporte/PreguntasViewHolder.kt,5\a\5ab066c9eef43b7d81c537957e945cfdbe469e4d
+|
+Lapp/src/main/java/com/example/practicasoporte/PreguntasFrecuentesActivity.kt,3\a\3ab3c53113d660a748468a68b778dc6eb02ea4c4
+r
+Bapp/src/main/java/com/example/practicasoporte/PreguntasProvider.kt,d\a\dade09ac91fc6439d4e11989c167f380c528705e

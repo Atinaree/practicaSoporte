@@ -1,9 +1,10 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.Averias
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import com.example.practicasoporte.R
 import com.example.practicasoporte.databinding.ActivityNotificacionAveriasBinding
 
 class NotificacionAveriasActivity : AppCompatActivity() {
