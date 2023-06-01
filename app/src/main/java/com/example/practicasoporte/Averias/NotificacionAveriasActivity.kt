@@ -22,13 +22,16 @@ class NotificacionAveriasActivity : AppCompatActivity() {
             baseContext.resources.getString(R.string.activity_notificacion_averias_spinnerItem2),
             baseContext.resources.getString(R.string.activity_notificacion_averias_spinnerItem3)))
 
+        binding.imgBtnSalir2.setOnClickListener{
+            finish()
+        }
         binding.spTipoAveria.adapter = aaAveria
 
         binding.btEnviarAveria.setOnClickListener {
             Toast.makeText(
                 this,
                 baseContext.resources.getString(R.string.activity_notificacion_averias_enviarAveria),
-                Toast.LENGTH_SHORT
+                Toast.LENGTH_LONG
             ).show()
             finish()
         }

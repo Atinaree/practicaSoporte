@@ -33,7 +33,9 @@ class centroAyudaActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        binding.imgBtnSalir.setOnClickListener {
+            finish()
+        }
 
 
 

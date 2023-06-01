@@ -6,39 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".centroAyudaActivity">
 
-  <Button
-      android:id="@+id/centroAyuda.btnNotificarAveria"
-      android:layout_width="237dp"
-      android:layout_height="56dp"
-      android:layout_marginTop="376dp"
-      android:background="@drawable/borde_boton_blanco"
-      android:text="@string/activity_CentroAyuda.btnTextoNotificacionAveria"
-      android:textAllCaps="false"
+  <ImageButton
+      android:id="@+id/imgBtnSalir"
+      android:layout_width="42dp"
+      android:layout_height="47dp"
+      android:layout_marginTop="16dp"
+      android:background="@color/white"
+      android:src="@drawable/icono_salir"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.956"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
   <Button
       android:id="@+id/centroAyuda.btnAsistente"
-      android:layout_width="232dp"
-      android:layout_height="53dp"
-      android:layout_marginEnd="4dp"
-      android:layout_marginBottom="32dp"
+      android:layout_width="240dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="40dp"
       android:background="@drawable/borde_boton_blanco"
       android:text="@string/activity_CentroAyuda.btnTextoAsistente"
       android:textAllCaps="false"
-      app:layout_constraintBottom_toTopOf="@+id/centroAyuda.btnNotificarAveria"
-      app:layout_constraintEnd_toEndOf="@+id/centroAyuda.btnNotificarAveria" />
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.503"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/centroAyuda.btnPreguntasFrecuentes"
+      app:layout_constraintVertical_bias="0.013" />
 
   <Button
       android:id="@+id/centroAyuda.btnPreguntasFrecuentes"
-      android:layout_width="232dp"
-      android:layout_height="56dp"
-      android:layout_marginBottom="43dp"
+      android:layout_width="240dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="50dp"
       android:background="@drawable/borde_boton_blanco"
       android:text="@string/activity_CentroAyuda.btnTextoPreguntasFrecuentes"
       android:textAllCaps="false"
-      app:layout_constraintBottom_toTopOf="@+id/centroAyuda.btnAsistente"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintHorizontal_bias="0.503"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/centroAyuda.btnNotificarAveria"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <Button
+      android:id="@+id/centroAyuda.btnNotificarAveria"
+      android:layout_width="240dp"
+      android:layout_height="55dp"
+      android:background="@drawable/borde_boton_blanco"
+      android:text="@string/activity_CentroAyuda.btnTextoNotificacionAveria"
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.501"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.224" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

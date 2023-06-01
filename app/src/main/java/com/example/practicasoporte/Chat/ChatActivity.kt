@@ -14,14 +14,19 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.practicasoporte.Averias.NotificacionAveriasActivity
+import com.example.practicasoporte.Chat.Constants.AGENTE
+import com.example.practicasoporte.Chat.Constants.AVERIAS
+import com.example.practicasoporte.Chat.Constants.PREGUNTAS
+import com.example.practicasoporte.Chat.Constants.SALIR
+import com.example.practicasoporte.PreguntasFrecuentes.PreguntasFrecuentesActivity
 import com.example.practicasoporte.R
 import kotlinx.coroutines.*
 
 class ChatActivity : AppCompatActivity() {
     private val TAG = "ChatActivity"
 
-    //You can ignore this messageList if you're coming from the tutorial,
-    // it was used only for my personal debugging
+
     var messagesList = mutableListOf<Message>()
 
     private lateinit var adapter: MessagingAdapter
@@ -35,9 +40,16 @@ class ChatActivity : AppCompatActivity() {
 
         clickEvents()
 
-        val random = (0..3).random()
-        customBotMessage("Hola! Soy ${botList[random]}, ¿Cómo puedo ayudarte?")
-        customBotMessage("Por favor eliga una de las siguientes opciones: \n 1º \n Eustaquio")
+
+        customBotMessage("Hola!, Esta usted usando el chat virtual de Iberdrola.")
+
+
+        customBotMessage("Por favor, eliga la opción que mas se adecue a su consulta: " +
+                "\n 1º Consultar política de facturación " +
+                "\n 2º Informar de una avería" +
+                "\n 3º Sitio web de Iberdrola SL" +
+                "\n 5º Chatear con un agente" +
+                "\n 4º Salir" )
     }
 
     private fun clickEvents() {
@@ -73,7 +85,7 @@ class ChatActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        //In case there are messages, scroll to bottom when re-opening app
+        //Si hay mensajes y se reabre el chat va hasta el final para ver el ultimo mensaje
         GlobalScope.launch {
             var rv_messages = findViewById<RecyclerView>(R.id.rv_messages)
             delay(100)
@@ -121,22 +133,49 @@ class ChatActivity : AppCompatActivity() {
                 //Sube la vista
                 rv_messages.scrollToPosition(adapter.itemCount - 1)
 
-                //inicia la pagina de iberdrola
+
                 when (response) {
+                    //inicia la pagina de iberdrola
                     OPEN_PAGE -> {
                         val site = Intent(Intent.ACTION_VIEW)
+                        delay(4000)
                         site.data = Uri.parse("https://www.iberdrola.es/")
                         startActivity(site)
+
+                    }
+                    //Opcion 1 elegida
+                    PREGUNTAS -> {
+                        delay(3000)
+                        val intent = Intent(this@ChatActivity, PreguntasFrecuentesActivity::class.java)
+                        startActivity(intent)
+
+                    }
+                    //Opcion 2 elegida
+                    AVERIAS -> {
+                        delay(3000)
+                        val intent = Intent(this@ChatActivity, NotificacionAveriasActivity::class.java)
+                        startActivity(intent)
+
+                    }
+                    //Opcion 3 elegida
+                    AGENTE -> {
+                        delay(3000)
+                        val random = (0..3).random()
+                        customBotMessage("Hola! Soy ${botList[random]}, ¿Cómo puedo ayudarte?")
+                    }
+                    //Opcion 4 elegida
+                    SALIR -> {
+                        delay(4000)
+                        finish()
                     }
                 }
             }
         }
     }
-
+    // Esto fuerza un mensaje al bot
     private fun customBotMessage(message: String) {
 
         GlobalScope.launch {
-            delay(1000)
             withContext(Dispatchers.Main) {
                 val timeStamp = Time.timeStamp()
                 var rv_messages = findViewById<RecyclerView>(R.id.rv_messages)
