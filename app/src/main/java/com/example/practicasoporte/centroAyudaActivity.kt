@@ -33,5 +33,9 @@ class centroAyudaActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
+
+
     }
 }
