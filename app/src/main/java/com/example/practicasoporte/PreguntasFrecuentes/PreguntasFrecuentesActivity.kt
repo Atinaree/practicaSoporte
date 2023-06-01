@@ -1,9 +1,10 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.PreguntasFrecuentes
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.practicasoporte.centroAyudaActivity
 import com.example.practicasoporte.databinding.ActivityPreguntasFrecuentesBinding
 
 class PreguntasFrecuentesActivity : AppCompatActivity() {

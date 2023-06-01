@@ -1,7 +1,8 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.PreguntasFrecuentes
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.example.practicasoporte.R
 import com.example.practicasoporte.databinding.ItemViewBinding
 
 class PreguntasViewHolder(view: View): RecyclerView.ViewHolder(view){

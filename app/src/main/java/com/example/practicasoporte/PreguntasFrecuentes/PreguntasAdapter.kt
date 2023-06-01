@@ -1,8 +1,9 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.PreguntasFrecuentes
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.practicasoporte.R
 
 class PreguntasAdapter(val listaPreguntas: List<Preguntas>) : RecyclerView.Adapter<PreguntasViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PreguntasViewHolder {

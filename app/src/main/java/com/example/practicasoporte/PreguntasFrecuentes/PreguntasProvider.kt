@@ -1,4 +1,4 @@
-package com.example.practicasoporte
+package com.example.practicasoporte.PreguntasFrecuentes
 
 class PreguntasProvider {
 

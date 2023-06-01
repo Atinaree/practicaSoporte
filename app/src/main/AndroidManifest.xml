@@ -14,10 +14,10 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".NotificacionAveriasActivity"
+            android:name=".Averias.NotificacionAveriasActivity"
             android:exported="false" />
         <activity
-            android:name=".PreguntasFrecuentesActivity"
+            android:name=".PreguntasFrecuentes.PreguntasFrecuentesActivity"
             android:exported="false" />
         <activity
             android:name=".Chat.ChatActivity"

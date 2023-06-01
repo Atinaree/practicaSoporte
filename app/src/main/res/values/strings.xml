@@ -25,4 +25,8 @@
     <string name="activity_notificacion_averias.spinnerItem2">Instalación Electrica</string>
     <string name="activity_notificacion_averias.spinnerItem3">Otros</string>
     <string name="activity_notificacion_averias.enviarAveria">Avería Enviada</string>
+
+    <!-- Recursos mensaje_item -->
+    <string name="mensaje_item.mensajebot">This is a sample message that will appear</string>
+    <string name="mensaje_item.mensajehumano">This is a sample message that will appear</string>
 </resources>
