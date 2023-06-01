@@ -17,8 +17,7 @@ class PreguntasFrecuentesActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.preguntasFrecuentesToolbarImgBtnSalir.setOnClickListener(){
-            val intent = Intent(this, centroAyudaActivity::class.java)
-            startActivity(intent)
+        finish()
         }
         initReciclerView()
     }

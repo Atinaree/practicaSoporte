@@ -48,8 +48,8 @@ class ChatActivity : AppCompatActivity() {
                 "\n 1º Consultar política de facturación " +
                 "\n 2º Informar de una avería" +
                 "\n 3º Sitio web de Iberdrola SL" +
-                "\n 5º Chatear con un agente" +
-                "\n 4º Salir" )
+                "\n 4º Chatear con un agente" +
+                "\n 5º Salir" )
     }
 
     private fun clickEvents() {
