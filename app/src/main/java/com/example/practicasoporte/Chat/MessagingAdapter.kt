@@ -10,18 +10,13 @@ import com.example.practicasoporte.Chat.Constants.RECIVE_ID
 import com.example.practicasoporte.Chat.Constants.SEND_ID
 import com.example.practicasoporte.R
 
-class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>() {
-
-
-
+class MessagingAdapter : RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>() {
 
     var messagesList = mutableListOf<Message>()
 
     inner class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         init {
             itemView.setOnClickListener {
-
-                //Remove message on the item clicked
                 messagesList.removeAt(adapterPosition)
                 notifyItemRemoved(adapterPosition)
             }
@@ -34,8 +29,6 @@ class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>
         )
     }
 
-
-
     override fun getItemCount(): Int {
         return messagesList.size
     }
@@ -45,7 +38,6 @@ class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>
         val currentMessage = messagesList[position]
         var tv_message = holder.itemView.findViewById<TextView>(R.id.tv_message)
         var tv_bot_message = holder.itemView.findViewById<TextView>(R.id.tv_bot_message)
-
         when (currentMessage.id) {
             SEND_ID -> {
                 tv_message.apply {
@@ -68,5 +60,4 @@ class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>
         this.messagesList.add(message)
         notifyItemInserted(messagesList.size)
     }
-
 }

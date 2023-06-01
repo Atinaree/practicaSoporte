@@ -5,6 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Averias.NotificacionAveriasActivity">
+
+    <ImageButton
+        android:id="@+id/imgBtnSalir2"
+        android:layout_width="42dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:src="@drawable/icono_salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glLimiteIzquierdo"
         android:layout_width="wrap_content"
@@ -61,6 +74,8 @@
     <Button
         android:id="@+id/btEnviarAveria"
         style="@style/botones_primarios"
+        android:background="@drawable/borde_boton_blanco"
+        android:textColor="@color/black"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"

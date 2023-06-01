@@ -6,11 +6,11 @@ class PreguntasProvider {
         val listaPreguntas = listOf<Preguntas>(
             Preguntas(
                 "¿Como puedo obtener una factura en concreto?",
-                "Para ello debe dirigirse al apartado donde se muestran las facturas y pulsar el icono de filtrado, el cual le dirigirá a la pantalla donde se pueden filtrar las facturas"
+                "Para ello debe dirigirse al apartado donde se muestran las facturas y pulsar el icono de filtrado, el cual le dirigirá a la pantalla donde se pueden filtrar las facturas."
             ),
             Preguntas(
                 "¿Que debo hacer si no tengo luz?",
-                "Se deberá poner en contacto con alguno de nuestros agentes o desde el apartado de Soporte tecnico de la App notificar la incidencia"
+                "Se deberá poner en contacto con alguno de nuestros agentes o desde el apartado de Soporte tecnico de la App notificar la incidencia."
             ),
             Preguntas(
                 "¿Cada cuánto tiempo recibiré mis facturas?",
