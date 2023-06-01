@@ -1,5 +1,6 @@
 package com.example.practicasoporte
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,6 +14,11 @@ class PreguntasFrecuentesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPreguntasFrecuentesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.preguntasFrecuentesToolbarImgBtnSalir.setOnClickListener(){
+            val intent = Intent(this, centroAyudaActivity::class.java)
+            startActivity(intent)
+        }
         initReciclerView()
     }
 
