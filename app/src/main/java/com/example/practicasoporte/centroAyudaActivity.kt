@@ -32,6 +32,10 @@ class centroAyudaActivity : AppCompatActivity() {
             val intent = Intent(this, NotificacionAveriasActivity::class.java)
             startActivity(intent)
         }
+        binding.centroAyudaBtnPaginaWeb.setOnClickListener(){
+            val intent = Intent(this, WebWiewActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.imgBtnSalir.setOnClickListener {
             finish()
