@@ -16,6 +16,7 @@
     <string name="activity_CentroAyuda.btnTextoPreguntasFrecuentes"> Preguntas frecuentes</string>
     <string name="activity_CentroAyuda.btnTextoAsistente"> Asistente</string>
     <string name="activity_CentroAyuda.btnTextoNotificacionAveria">Notificar Avería</string>
+    <string name="activity_CentroAyuda.btnTextoPaginaWeb">Página web</string>
 
     <!-- Activity Notificacion Averia -->
     <string name="activity_notificacion_averias.tietMotivoAveriaHint">Descripción Avería</string>
